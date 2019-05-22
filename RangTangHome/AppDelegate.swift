@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AdvertisementView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 网络资源
+//        let adImageJPGUrl = "http://p5.image.hiapk.com/uploads/allimg/150112/7730-150112143S3.jpg"
+        let adimageGIFUrl = "http://img.ui.cn/data/file/3/4/6/210643.gif"
+        // 本地资源
+//        let adImageJPGPath = Bundle.main.path(forResource: "adImage2", ofType: "jpg") ?? ""
+//        let adImageGifPath = Bundle.main.path(forResource: "adImage3", ofType: "gif") ?? ""
+        
+        //let _ = AdvertisementView.init(adUrl: adImageGifPath, isIgnoreCache: false, didClickAdViewCompletion: {})
+        
+        let _ = AdvertisementView.init(frame: UIScreen.main.bounds, duration: 3, delay: 1, adUrl: adimageGIFUrl, isHiddenSkipBtn: false, isIgnoreCache: false, placeholderImage: nil, completion:{_ in })
+        
         return true
     }
 

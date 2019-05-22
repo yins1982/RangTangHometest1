@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45BD12E1C05A86A098D6E588 /* Pods_RangTangHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9978A8836DDDD37F9892FC2F /* Pods_RangTangHome.framework */; };
 		55FCA6672294DCFD00CF909C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6662294DCFD00CF909C /* AppDelegate.swift */; };
 		55FCA6692294DCFD00CF909C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6682294DCFD00CF909C /* ViewController.swift */; };
 		55FCA66C2294DCFD00CF909C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FCA66A2294DCFD00CF909C /* Main.storyboard */; };
@@ -14,6 +15,10 @@
 		55FCA6712294DCFE00CF909C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FCA66F2294DCFE00CF909C /* LaunchScreen.storyboard */; };
 		55FCA67C2294DCFE00CF909C /* RangTangHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA67B2294DCFE00CF909C /* RangTangHomeTests.swift */; };
 		55FCA6872294DCFE00CF909C /* RangTangHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6862294DCFE00CF909C /* RangTangHomeUITests.swift */; };
+		55FCA6992294E26600CF909C /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6982294E26600CF909C /* LaunchViewController.swift */; };
+		55FCA69B2294E7A400CF909C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA69A2294E7A400CF909C /* HomeViewController.swift */; };
+		55FCA6B62294EC0C00CF909C /* Home_QWFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6B52294EC0C00CF909C /* Home_QWFBViewController.swift */; };
+		55FCA6B922952F9400CF909C /* Home_WRTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FCA6B822952F9400CF909C /* Home_WRTViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,13 @@
 		55FCA6822294DCFE00CF909C /* RangTangHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RangTangHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FCA6862294DCFE00CF909C /* RangTangHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangTangHomeUITests.swift; sourceTree = "<group>"; };
 		55FCA6882294DCFE00CF909C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FCA6982294E26600CF909C /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		55FCA69A2294E7A400CF909C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		55FCA6B52294EC0C00CF909C /* Home_QWFBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_QWFBViewController.swift; sourceTree = "<group>"; };
+		55FCA6B822952F9400CF909C /* Home_WRTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_WRTViewController.swift; sourceTree = "<group>"; };
+		9978A8836DDDD37F9892FC2F /* Pods_RangTangHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RangTangHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D037C617DE8188CEE7D0132A /* Pods-RangTangHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangTangHome.release.xcconfig"; path = "Target Support Files/Pods-RangTangHome/Pods-RangTangHome.release.xcconfig"; sourceTree = "<group>"; };
+		F249E3CA86381BC734260CB3 /* Pods-RangTangHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RangTangHome.debug.xcconfig"; path = "Target Support Files/Pods-RangTangHome/Pods-RangTangHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BD12E1C05A86A098D6E588 /* Pods_RangTangHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,8 @@
 				55FCA67A2294DCFE00CF909C /* RangTangHomeTests */,
 				55FCA6852294DCFE00CF909C /* RangTangHomeUITests */,
 				55FCA6642294DCFD00CF909C /* Products */,
+				BCD8FAC3F666C5D267ABE099 /* Pods */,
+				D526CD518ECD38408FCF9BDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,10 +112,14 @@
 		55FCA6652294DCFD00CF909C /* RangTangHome */ = {
 			isa = PBXGroup;
 			children = (
+				55FCA69C2294EB6E00CF909C /* Lib */,
+				55FCA6972294E25100CF909C /* Controller */,
+				55FCA6942294E01500CF909C /* Images */,
 				55FCA6662294DCFD00CF909C /* AppDelegate.swift */,
 				55FCA6682294DCFD00CF909C /* ViewController.swift */,
 				55FCA66A2294DCFD00CF909C /* Main.storyboard */,
 				55FCA66D2294DCFE00CF909C /* Assets.xcassets */,
+				55FCA6982294E26600CF909C /* LaunchViewController.swift */,
 				55FCA66F2294DCFE00CF909C /* LaunchScreen.storyboard */,
 				55FCA6722294DCFE00CF909C /* Info.plist */,
 			);
@@ -125,6 +144,63 @@
 			path = RangTangHomeUITests;
 			sourceTree = "<group>";
 		};
+		55FCA6942294E01500CF909C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		55FCA6972294E25100CF909C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55FCA6B42294EBD300CF909C /* ChildController */,
+				55FCA69A2294E7A400CF909C /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		55FCA69C2294EB6E00CF909C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				55FCA6B72294F44200CF909C /* Share */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		55FCA6B42294EBD300CF909C /* ChildController */ = {
+			isa = PBXGroup;
+			children = (
+				55FCA6B52294EC0C00CF909C /* Home_QWFBViewController.swift */,
+				55FCA6B822952F9400CF909C /* Home_WRTViewController.swift */,
+			);
+			path = ChildController;
+			sourceTree = "<group>";
+		};
+		55FCA6B72294F44200CF909C /* Share */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		BCD8FAC3F666C5D267ABE099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F249E3CA86381BC734260CB3 /* Pods-RangTangHome.debug.xcconfig */,
+				D037C617DE8188CEE7D0132A /* Pods-RangTangHome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D526CD518ECD38408FCF9BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9978A8836DDDD37F9892FC2F /* Pods_RangTangHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55FCA68B2294DCFE00CF909C /* Build configuration list for PBXNativeTarget "RangTangHome" */;
 			buildPhases = (
+				C33512F56CADD4FBC534DCED /* [CP] Check Pods Manifest.lock */,
 				55FCA65F2294DCFD00CF909C /* Sources */,
 				55FCA6602294DCFD00CF909C /* Frameworks */,
 				55FCA6612294DCFD00CF909C /* Resources */,
+				838558979CD35DE91F9E57A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,13 +329,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		838558979CD35DE91F9E57A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RangTangHome/Pods-RangTangHome-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AdvertisementView/AdvertisementView.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/STSegmentPageView/STSegmentPageView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdvertisementView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STSegmentPageView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RangTangHome/Pods-RangTangHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C33512F56CADD4FBC534DCED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RangTangHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55FCA65F2294DCFD00CF909C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				55FCA6692294DCFD00CF909C /* ViewController.swift in Sources */,
+				55FCA6992294E26600CF909C /* LaunchViewController.swift in Sources */,
 				55FCA6672294DCFD00CF909C /* AppDelegate.swift in Sources */,
+				55FCA6B922952F9400CF909C /* Home_WRTViewController.swift in Sources */,
+				55FCA69B2294E7A400CF909C /* HomeViewController.swift in Sources */,
+				55FCA6B62294EC0C00CF909C /* Home_QWFBViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,9 +563,12 @@
 		};
 		55FCA68C2294DCFE00CF909C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F249E3CA86381BC734260CB3 /* Pods-RangTangHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C328JL42V;
 				INFOPLIST_FILE = RangTangHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +583,12 @@
 		};
 		55FCA68D2294DCFE00CF909C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D037C617DE8188CEE7D0132A /* Pods-RangTangHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3C328JL42V;
 				INFOPLIST_FILE = RangTangHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
